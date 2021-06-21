@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+}
+
+h4 {
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 100px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.container {
+    text-align:center;
+    display: table;
+    justify-content: space-evenly;
+}

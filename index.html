@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hangman</title>
+  </head>
+  <body>
+    <br>
+    <br>
+    <h1>Hangman</h1>
+    <br> <br>
+    <div class="d-grid gap-2 col-2 mx-auto">
+        <button id ="startButton" class="btn btn-primary" type="button" onclick="startGame()" style="display: block">Start Game!</button>
+        <br>
+        <button id ="restartButton" class="btn btn-danger" type="button" onclick="restartGame()" style="display: none">Restart!</button>
+    </div>
+    <br> <br> <br>
+    <div id="emptySpaces" style="text-align: center">
+    </div>
+    <br> <br> <br> <br>
+    <div id="alphabet" class="container" >
+    </div>
+    <br> <br> <br>
+     <h4 id="attempts" style="display: none">Remaining Attempts: <span id = 'attemptsLeft'> 8 </span></h4>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
