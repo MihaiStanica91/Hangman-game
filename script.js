@@ -50,11 +50,11 @@ function checkLetter(chosenLetter) {
     document.getElementById(chosenLetter).setAttribute("disabled", true);
     if (answer.indexOf(chosenLetter) >= 0) {
         emptyWord();
-        gameWon();
+        gameStatus();
     } else {
         attemptsLeft--;
         updateAttempts();
-        gameLost();
+        gameStatus();
     }
 }
 
@@ -62,14 +62,10 @@ function updateAttempts() {
     document.getElementById("attemptsLeft").innerHTML = attemptsLeft;
 }
 
-function gameWon() {
+function gameStatus() {
     if (answer === wordStatus) {
         document.getElementById("emptySpaces").innerHTML = 'Congratulations!!! You Won!!!';
-    }
-}
-
-function gameLost() {
-    if (attemptsLeft === 0) {
+    } else if (attemptsLeft === 0) {
         document.getElementById("emptySpaces").innerHTML = 'You Lost!!! The word was: ' + answer + '!';
     }
 }
